@@ -5,6 +5,9 @@
 
 *, *::after, *::before
     box-sizing: inherit
+img
+    width: 100%
+    height: auto
 
 html
     box-sizing: border-box
@@ -80,7 +83,10 @@ body
     margin-left: auto
 
 .button
+    display: inline-block
+    padding: 10px 30px
     font: inherit
+    margin-right: 15px
     
     text-align: center
     color: #ffffff
@@ -89,6 +95,14 @@ body
     
     background-color: #000000
     border: none
+.button:hover,
+.button:focus,
+.button:active
+    background-color: #663d15
+
+.button:disabled
+    background-color: grey
+    
 
 a
     text-decoration: none
@@ -185,6 +199,8 @@ a
 .user-navigation a:focus
     background-color: #242424
 
+
+
 .features
     margin-bottom: 80px
 
@@ -204,10 +220,23 @@ a
     text-align: center
 
 .features-item h3
+    position: relative
     font-size: 30px
     line-height: 42px
+    margin-bottom: 60px
 
-
+.features-item h3:after
+    content: ''
+    
+    position: absolute
+    left: 50%
+    top: 50px
+    width: 20px
+    height: 20px
+    margin-left: -10px
+    transform: rotate(45deg)
+    background-color: white
+    
 .index-columns
     display: -webkit-box
     display: -ms-flexbox
@@ -231,19 +260,32 @@ a
     
 .news
     width: 380px
+    
+
+       
 
 .gallery
     width: 300px
 
 .news-items
     list-style: none
+    margin: 0
+    padding: 0
+    margin-bottom: 25px
+   
 
+    
 .news-items time
     text-transform: none
 .gallery-items
+    padding: 0
+    margin: 0
+    width: 286px 
+    height: 164px
     background-color: #cccccc
     border: 7px solid #ffffff
-        
+    
+
 .contacts
     width: 380px
 
@@ -274,7 +316,7 @@ a
 
 
 .breadcrumbs a
-    color: #000000;
+    color: #000000
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus
