@@ -275,16 +275,33 @@ a
    
 
     
-.news-items time
-    text-transform: none
-.gallery-items
-    padding: 0
+.news-items
+    & time
+        text-transform: none
+.gallery-wrap
+    position: relative
+    height: 305px
+.gallery-button
+    position: absolute
+    box-sizing: border-box
+    width: 140px
     margin: 0
-    width: 286px 
+    bottom: 0
+    
+.gallery-button-next
+    right: 0
+.gallery-button-back
+    left: 0   
+    
+.gallery-items
     height: 164px
+    padding: 0
+    margin: 0   
     background-color: #cccccc
     border: 7px solid #ffffff
-    
+    & img
+        width: 286px 
+        height: 164px
 
 .contacts
     width: 380px
