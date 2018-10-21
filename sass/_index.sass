@@ -347,6 +347,7 @@ a
     line-height: 42px
 
 .breadcrumbs
+    display: flex
     padding: 0
     margin: 0
     margin-bottom: 50px
@@ -355,6 +356,7 @@ a
 
 .breadcrumbs a
     color: #000000
+    margin-right: 10px
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus
@@ -400,7 +402,7 @@ a
 .catalog-wrap
     display:-webkit-box
     display:-ms-flexbox
-    display:flex
+    display: flex
 
 .catalog-items
     padding: 0
@@ -426,14 +428,17 @@ a
     box-shadow: 00 10px rgba(0, 0, 0, 0.1)
 
 
-.catalog-item a
-    color: #000000
-    
+.catalog-item
+    span
+        color: #000000
+    & .button
+        margin-left: 20px
 
 
 .catalog-item h3 
     font-size: 14px
     line-height: 18px
+   
 
 
 .catalog-category
