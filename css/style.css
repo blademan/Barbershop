@@ -37,7 +37,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #000000;
-  background-image: url("/src/img/bg.png");
+  background-image: url(../img/bg.png);
   background-position: top center;
   background-repeat: no-repeat; }
 
@@ -49,7 +49,7 @@ body {
 .inner-page {
   color: #000000;
   background-color: #fbf8f5;
-  background-image: url(/src/img/Layer1.jpg);
+  background-image: url(../img/Layer1.jpg);
   background-position: 0 0;
   background-repeat: repeat; }
 
@@ -242,7 +242,7 @@ a {
   padding: 50px 80px;
   color: #000000;
   background-color: #f8f5f2;
-  background-image: url(/src/img/Layer1.jpg);
+  background-image: url(../img/Layer1.jpg);
   background-position: 0 0;
   background-repeat: repeat;
   margin-bottom: 35px; }
@@ -268,7 +268,7 @@ a {
 
 .gallery-wrap {
   position: relative;
-  height: 305px; }
+  height: 303px; }
 
 .gallery-button {
   position: absolute;
@@ -296,14 +296,43 @@ a {
 
 .contacts {
   width: 380px; }
+  .contacts p {
+    padding-bottom: 50px; }
 
 .appointment {
   width: 300px; }
+  .appointment .button {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px; }
+
+.appointment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.appointment-item {
+  width: 140px;
+  margin: 0; }
+  .appointment-item label {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 7px; }
 
 .appointment-item input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   font: inherit;
   background-color: transparent;
-  border: 2px solid #000000; }
+  border: 2px solid #000000;
+  width: 140px;
+  padding: 7px;
+  margin-bottom: 20px; }
 
 .appointment-item input:focus {
   border-color: #663d15; }
@@ -446,7 +475,7 @@ a {
   padding-bottom: 40px;
   color: #ffffff;
   background-color: #212121;
-  background-image: url(/src/img/footerbg.jpg);
+  background-image: url(../img/footerbg.jpg);
   background-position: 0 0;
   background-repeat: repeat; }
 
@@ -489,7 +518,7 @@ footer .container {
 
 .modal {
   color: #000000;
-  background-image: url(/src/img/Modalbg.jpg);
+  background-image: url(../img/Modalbg.jpg);
   background-position: 0 0;
   background-repeat: repeat; }
 
