@@ -368,9 +368,23 @@ a {
   margin-bottom: 50px;
   list-style: none; }
 
+.breadcrumbs-point {
+  position: relative; }
+
+.breadcrumbs-point:after {
+  content: '';
+  top: -7px;
+  left: 75px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: black; }
+
 .breadcrumbs a {
   color: #000000;
-  margin-right: 10px; }
+  margin-right: 50px; }
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
@@ -382,6 +396,34 @@ a {
 .filter {
   margin: 0;
   width: 180px; }
+
+.filter {
+  padding-left: 30px;
+  cursor: pointer; }
+
+.filter-form {
+  position: relative; }
+
+.checkbox-indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000; }
+
+.filter-input:checked + .filter-checkbox::before,
+.filter-input:checked + .filter-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 3px;
+  width: 15px;
+  height: 2px;
+  background-color: #000; }
+
+.filter-input:focus + .filter-label {
+  color: #663d15; }
 
 .filter fieldset {
   border: none; }
@@ -596,7 +638,6 @@ footer .container {
 .modal {
   position: fixed;
   color: #000000;
-  display: none;
   background-image: url(../img/Modalbg.jpg);
   background-position: 0 0;
   background-repeat: repeat;
