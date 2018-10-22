@@ -422,24 +422,27 @@ a
     height: 17px
 
     border: 2px solid #000
-
-.filter-input:checked ~ .filter-checkbox::before,
-.filter-input:checked ~ .filter-checkbox::after 
+.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator
+    border-color: red
+    outline: thin dotted
+    outline: 5px auto
+    
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after
   content: ""
 
   position: absolute
-  top: 10px
-  left: -25px
+  top: 5px
+  left: 0px
 
   width: 15px
   height: 2px
 
   background-color: #000
 
-.filter-input:focus + .filter-checkbox 
-  color: #663d15
-
-    
+.filter-checkbox:focus,
+.filter-checkbox:hover 
+    color: red
 
 
 .filter fieldset
