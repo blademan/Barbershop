@@ -412,7 +412,7 @@ a {
   border: 2px solid #000; }
 
 .filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-  border-color: red;
+  border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto; }
 
@@ -422,13 +422,48 @@ a {
   position: absolute;
   top: 5px;
   left: 0px;
-  width: 15px;
+  width: 13px;
   height: 2px;
   background-color: #000; }
 
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 .filter-checkbox:focus,
 .filter-checkbox:hover {
-  color: red; }
+  color: #663d15; }
+
+/*radio*/
+.filter-option {
+  position: relative; }
+
+.filter-radio:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid black; }
+
+.filter-input:checked + .filter-radio::after {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: 1px;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%; }
+
+.filter-radio + .filter-input:disabled {
+  color: #aba9a7;
+  cursor: default; }
 
 .filter fieldset {
   border: none;
