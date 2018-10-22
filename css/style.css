@@ -567,15 +567,71 @@ footer .container {
   color: #000000;
   background-color: #ffffff; }
 
+/*MODAL*/
 .modal {
+  position: fixed;
   color: #000000;
   background-image: url(../img/Modalbg.jpg);
   background-position: 0 0;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7); }
+
+.modal input {
+  width: 100%;
+  border: 2px solid black;
+  padding: 7px; }
+
+.modal-login {
+  top: 120px;
+  left: 50%;
+  margin-left: -230px;
+  width: 460px;
+  height: 385px;
+  padding: 30px 80px; }
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0; }
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0; }
+
+.modal-close::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.modal-close::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.modal-description {
+  font-size: 13px;
+  margin: 0;
+  margin-bottom: 20px; }
 
 .modal h2 {
-  font-size: 30px;
-  line-height: 42; }
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 38px; }
+
+.login-form p {
+  margin-bottom: 10px; }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
