@@ -297,10 +297,11 @@ Telefons: +371 2778811</p>
     </footer>
 
     <!-- **************MODAL********** -->
+ <!-- *******MODAL************** -->
 
-    <section class="modal modal login">
+    <section class="modal modal-login">
         <h2>Personīgais kabinets</h2>
-        <p>Ievadiet savu lietotajvārdu un paroli</p>
+        <p class="modal-description">Ievadiet savu lietotāju un paroli</p>
 
         <form action="" method="post" class="login-form">
 
@@ -313,20 +314,39 @@ Telefons: +371 2778811</p>
                 <label for="user-password" class="visually-hidden">Password</label>
                 <input id="user-password" name="password" placeholder="Parole" type="password" class="login-icon-password">
             </p>
-            <p class="login-password-info">
-                <label for="" class="visually-hidden">
+
+
+            <p class="login-help">
+                <label class="login-checkbox">
                     <input type="checkbox" name="remember" class="visually-hidden">
-                    <span class="checkbox-indificator"></span>
-                    Atcerēties mani
+                    <span class="checkbox-indicator"></span>
+                    Atcerēties
                 </label>
                 <a href="#" class="restore">Aizmirsu paroli</a>
             </p>
             <button class="button" type="submit">Ienākt</button>
 
         </form>
+
         <button class="modal-close" type="button">Aizvērt</button>
 
     </section>
+
+
+
+
+
+    <!-- MODAL MAP -->
+
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Kā mūs atrast?</h2>
+        <p>
+            <img src="img/map.png" alt="Latvija,Riga" width="767" height="585">
+        </p>
+        <button class="modal-close" type="button">Aizvert</button>
+    </section>
+    <div class="modal-overlay"></div>
+
     <script>
 
     </script>

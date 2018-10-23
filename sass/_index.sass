@@ -389,6 +389,18 @@ a
     margin: 0
     padding: 0
     margin-right: 40px
+    position: relative
+.breadcrumbs a:after
+    content: ""
+    
+    
+    position: absolute
+    top: 9px
+    right: -25px
+    width: 8px
+    height: 8px
+    background-color: black
+    transform: rotate(45deg)
 
 
 .breadcrumbs a:hover,
@@ -666,6 +678,50 @@ a
     list-style: none
 .product-text
     margin-bottom: 30px
+    
+    
+.price-title
+    font-size: 48px
+    text-align: center
+    display: flex
+    align-items: center
+  
+    
+.price-title:before,
+.price-title:after
+    content: ""
+    
+    flex-grow: 1
+    flex-shrink: 0
+    width: 60px
+    height: 4px
+    background-color: black
+    
+.price-title:before
+    margin-right: 20px
+    
+.price-title:after
+    margin-left: 20px
+.price-li
+
+    margin: 14px 0
+
+    padding: 0
+    list-style: none
+.price-li li
+    position: relative
+    padding-left: 20px
+    
+.price-li li::before
+    content: ""
+    
+    position: absolute
+    top: 8px
+    left: 0
+    width: 10px
+    height: 10px
+    background-color: black
+    transform: rotate(45deg)
 .footer
     margin-top: 65px
     padding-top: 65px
@@ -764,16 +820,16 @@ footer .container
     position: fixed
     top: 0
     left: 0
-    
+    display: none
     width: 100%
     height: 100%
-    z-index: -1
+    z-index: -10
     background-color: black
     opacity: 0.4
 .modal
     position: fixed
     color: #000000
-
+    display: none
     background-image: url(../img/Modalbg.jpg)
     background-position: 0 0
     background-repeat: repeat
