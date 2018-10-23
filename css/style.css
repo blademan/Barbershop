@@ -719,6 +719,7 @@ a {
   list-style: none; }
 
 .price-li li {
+  margin-top: 13px;
   position: relative;
   padding-left: 20px; }
 
@@ -735,12 +736,40 @@ a {
 
 .custom-table-1 {
   width: 100%;
+  margin-top: 50px;
   border-collapse: collapse;
   border: solid black; }
 
 .custom-table-1 td {
   border: solid black;
   padding: 10px; }
+
+.custom-table-1 td:last-child {
+  text-align: center; }
+
+.price-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .price-columns-left {
+    width: 50%; }
+  .price-columns-right {
+    width: 50%; }
+  .price-columns h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px; }
+
+.price-subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px; }
+
+.aboutus p {
+  text-align: center; }
 
 .footer {
   margin-top: 65px;
