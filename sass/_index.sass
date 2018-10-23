@@ -413,6 +413,11 @@ a
         margin-top: 10px
 .filter-form
     position: relative
+    margin-bottom: 20px
+.filter-option
+    margin-bottom: 20px
+.filter-option-wrap
+    margin-top: 30px
 .checkbox-indicator 
     position: absolute
     top: 2px
@@ -506,7 +511,8 @@ a
     color: #000000
     
     opacity: 0.5
-
+.filter legend
+    margin-bottom: 40px
 .catalog
     width: 700px
 
@@ -527,40 +533,50 @@ a
     justify-content: space-between
 
 .catalog-item
+    display: flex
+    flex-wrap: wrap
+    font-size: 14px
+    line-height: 18px
+    margin: 0
+    padding: 10px
     width: 220px
     margin-bottom: 20px
    
     background-color: #f8f8f8
-    -webkit-box-shadow: 00 10px rgba(0, 0, 0, 0.2)
-    box-shadow: 00 10px rgba(0, 0, 0, 0.1)
-
+    box-shadow: 0 0 7px 2px #ccc
+   
+    span
+        color: #000000
+        
+    & .button
+        padding: 11px 25px 10px 25px
+        margin: 0
+        margin-left: -2px
+        
+    
 .catalog-item:hover
     -webkit-box-shadow: 00 10px rgba(0, 0, 0, 0.1)
     box-shadow: 00 10px rgba(0, 0, 0, 0.1)
-
-
-.catalog-item
-    span
-        color: #000000
-    & .button
-        margin-left: 20px
-
-
-.catalog-item h3 
-    font-size: 14px
-    line-height: 18px
-   
+.catalog-link
+    display: flex 
+    flex-wrap: wrap
+.catalog-title
+    margin: 0
+    order: 1
 
 
 .catalog-category
+    display: block
     text-transform: none
 
-
+.catalog-item-price
+    margin-left: 0px
 .catalog-item-price b
     font-size: 14px
     line-height: 20px
     text-align: center
-    
+    padding: 8px 45px 12px 50px
+    margin: 0
     background-color: #e5e5e5
 
 .pagination-list 
