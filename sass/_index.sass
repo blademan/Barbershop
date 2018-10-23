@@ -64,6 +64,8 @@ body
 
 .flex-wrap
     display: flex
+    justify-content: space-between
+
 
 .inner-page
     color: #000000
@@ -626,24 +628,44 @@ a
 
 
 .product-price b
+    padding: 13px 50px 13px 50px
     line-height: 24px
     color: black
+    text-align:center
+    vertical-align: middle
     background-color: #e5e5e5
-
-.product-price h3
+.product-price .button
+    padding-left: 15px
+    padding-right: 15px
+    margin-left: -3px
+.product-info h3
     font-size: 24px
-    font-weight: 400
+    font-weight: 700
     line-height: 30px
+    margin-top: 50px
 
 .product-info
     width: 500px
     margin-left: 50px
     margin-right: 50px
     
-
+.product-list li
+    position: relative
+.product-list li:before
+    content: ""
+    
+    position: absolute
+    top: 7px
+    left: -35px
+    width: 10px
+    height: 10px
+    background-color: black
+    transform: rotate(45deg)
+    
 .product-info ul
     list-style: none
-
+.product-text
+    margin-bottom: 30px
 .footer
     margin-top: 65px
     padding-top: 65px
