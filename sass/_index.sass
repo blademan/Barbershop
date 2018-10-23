@@ -62,7 +62,8 @@ body
     padding: 0 10px
 
 
-
+.flex-wrap
+    display: flex
 
 .inner-page
     color: #000000
@@ -378,22 +379,15 @@ a
     position: relative
  
     
-.breadcrumbs-point:after
-    content: ''
-    top: -7px
-    left: 75px
-    position: absolute
-    width: 10px
-    height: 10px
-
-    transform: rotate(45deg)
-    background-color: black
 
 
 .breadcrumbs a
     color: #000000
-    margin-right: 50px
-    
+    display: inline-block
+    margin: 0
+    padding: 0
+    margin-right: 40px
+
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus
@@ -609,10 +603,23 @@ a
     color: #000000
     
     background-color: white
-    
+.product-photos
+    width: 480px
+    display: flex
+    flex-wrap: wrap
+.product-photo-full
+    width: 450px
+  
+    margin: 0
+    padding: 0
+
 
 .product-photo-preview
+    margin: 0
+    padding: 0
+    justify-content: space-between
     list-style: none
+    display: flex
 
 .product-article
     color: #aba9a7
@@ -628,7 +635,11 @@ a
     font-weight: 400
     line-height: 30px
 
-
+.product-info
+    width: 500px
+    margin-left: 50px
+    margin-right: 50px
+    
 
 .product-info ul
     list-style: none

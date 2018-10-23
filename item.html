@@ -13,7 +13,7 @@
     <!-- BOOTSTRAP GRID -->
 
     <!-- FONTS -->
- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -23,24 +23,24 @@
 
 <body class="inner-page">
    <header class="main-header ">
-   
-        <nav class="main-navigation container">
+   <div class="container">
+        <nav class="main-navigation ">
             <a href="index.html" class="header-logo"><img src="img/logoSmall.svg.png" width="111" height="24" alt="Logo Barbershop">
             </a>
             <ul class="site-navigation">
-                <li><a href="info.html"></a>Informācija</li>
+                <li><a href="info.html">Informācija</a></li>
                 <li><a href="news.html">Ziņas</a></li>
                 <li><a href="price.html">Cenas</a></li>
                 <li class="site-navigation-active"><a href="catalog.html">Veikals</a></li>
                 <li><a href="contacts">Kontakti</a></li>
             </ul>
             <ul class="user-navigation">
-                <li class="login-link">
+                <li>
                     <a href="login.html" class="login-link">Ieeja</a>
                 </li>
             </ul>
         </nav>
-       
+       </div>
     </header>
    
     <!-- Main -->
@@ -50,31 +50,41 @@
 
 
         <ul class="breadcrumbs">
-          
-            <li><a href="index.html">Galvenā</a></li>
-            <li><a href="catalog.html">Veikals</a></li>
-            <li><a href="#"></a>Kopšanas līdzekļi</li>
+           
+             <p class="breadcrumbs-point"> 
+               <li ><a href="index.html">Galvenā</a></li></p>
+                 <p class="breadcrumbs-point"> 
+          <li><a href="catalog.html">Veikals</a></li>
+            </p>
+                <p class="breadcrumbs-point"> 
+            <li><a href="#">Kopšanas līdzekļi</a></li>
+            </p>
             <li class="breadcrumbs-active">Ceļotāju komplekts «Baxter of California»</li>
+        
         </ul>
 
         <!-- Photo -->
+        
+      
          <div class="catalog-wrap">
+    
         <section class="product-photos">
             <h2 class="visually-hidden">
                 Preces fotogrāfija
             </h2>
 
             <p class="product-photo-full">
-                <img src="/src/img/items-photo.png" alt="Big Photo" width="460" height="498">
+                <img src="img/items-photo.png" alt="Big Photo" width="460" height="498">
             </p>
 
             <ul class="product-photo-preview">
-                <li><img src="/src/img/items-small1.png" width="140" height="149" alt="small photo"></li>
-                <li><img src="/src/img/items-small2.png" width="140" height="149" alt="small photo"></li>
-                <li><img src="/src/img/items-small3.png" width="140" height="149" alt="small photo"></li>
+                <li><img src="img/items-small1.png" width="140" height="149" alt="small photo"></li>
+                <li><img src="img/items-small2.png" width="140" height="149" alt="small photo"></li>
+                <li><img src="img/items-small3.png" width="140" height="149" alt="small photo"></li>
             </ul>
 
         </section>
+          
         <!-- Product info -->
 
         <section class="product-info">
@@ -82,10 +92,12 @@
             <h2 class="visually-hidden">
                 Preces apraksts
             </h2>
+            <div class="flex-wrap">
             <p class="product-availability">Pieejams</p>
             <p class="product-article">
                 Artikils: dexter-ae
             </p>
+            </div>
             <p class="product-text">
                 Travel Kit - nepieciešamais aksesuārs jebkurā braucienā.Ādas somā ir viss nepieciešamais skūšanās un ādas kopšanai, darba brauciena vai atpūtas laikā: tīrīšanas līdzeklis, mitrinošs līdzeklis, skūšanās krēms, krēms pēc skūšanās, šampūns. Komplekts var būt arī lieliska dāvana.
             </p>
