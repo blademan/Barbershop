@@ -1039,7 +1039,7 @@ footer .container {
   top: 50%;
   left: 50%;
   width: 767px;
-  height: 565px;
+  height: 585px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border: 7px solid white; }
