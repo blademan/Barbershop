@@ -30,8 +30,8 @@
             <div class="navigation-wrap">
                 <div class="container">
                     <ul class="site-navigation">
-                        <li class="site-navigation-active"><a href="index.html">Informācija</a></li>
-                        <li><a href="news.html">Ziņas</a></li>
+                        <li class="site-navigation-active"><a href="https://blademan.github.io/barbershop/">Informācija</a></li>
+                        <li><a href="https://blademan.github.io/barbershop/">Ziņas</a></li>
                         <li><a href="price.html">Cenas</a></li>
                         <li><a href="catalog.html">Veikals</a></li>
                         <li><a href="contacts">Kontakti</a></li>
@@ -126,7 +126,7 @@
                     Pr-Pk: 10:00 līdz 22:00<br>
                     Se-Sv: 10:00 līdz 19:00</p>
 
-                <a href="" class="button map-popup">Kā mūs atrast?</a>
+                <a href="" class="button contact-map">Kā mūs atrast?</a>
 
                 <a href="contacts.hmtl" class="button">Kontakti</a>
             </section>
@@ -268,13 +268,13 @@
     <script>
         var link = document.querySelector(".login-link");
         var popup = document.querySelector(".overlay");
-        var popupMap = document.querySelector(".overlay-map");
+ 
 
-        var close = document.querySelector(".modal-close"); var mapClose = document.querySelector(".map-close");
+        var close = document.querySelector(".modal-close"); 
         var login = popup.querySelector("[name=login]");
         var form = popup.querySelector("form");
         var password = popup.querySelector("[name=password]");
-        var map = document.querySelector(".map-popup");
+    
 
         link.addEventListener("click", function(evt) {
             evt.preventDefault();
@@ -287,11 +287,29 @@
             evt.preventDefault();
             popup.classList.remove("modal-show");
         });
+        
+        
+        
+    var map = document.querySelector(".map-popup");
+       var popupMap = document.querySelector(".overlay-map");
+var mapClose = document.querySelector(".map-close");
+        
+        map.addEventListener("click", function(evt) {
+            evt.preventDefault();
 
-
-
-
-
+            popupMap.classList.add("modal-show");
+        });
+         mapClose.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popupMap.classList.remove("modal-show");
+           
+        });  
+        
+        
+    var map = document.querySelector(".contact-map");
+       var popupMap = document.querySelector(".overlay-map");
+var mapClose = document.querySelector(".map-close");
+        
         map.addEventListener("click", function(evt) {
             evt.preventDefault();
 
