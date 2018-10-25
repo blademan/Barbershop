@@ -921,8 +921,8 @@ footer .container {
   display: block;
   -webkit-animation-name: bounce;
   animation-name: bounce;
-  -webkit-animation-duration: 0.6;
-  animation-duration: 0.6; }
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s; }
 
 .modal-login {
   top: 50%;
