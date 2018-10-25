@@ -33,8 +33,8 @@
                 <li><a href="index.html">Informācija</a></li>
                 <li><a href="item.html">Ziņas</a></li>
                 <li><a href="price.html">Cenas</a></li>
-                <li class="site-navigation-active"><a href="catalog.html">Veikals</a></li>
-                <li><a href="contacts">Kontakti</a></li>
+                <li class="site-navigation-active"><a href="shop.html">Veikals</a></li>
+                        <li><a class=" scrollto "  href="#contact">Kontakti</a></li>
             </ul>
             <ul class="user-navigation">
                 <li>
@@ -251,7 +251,7 @@
 
     <!-- FOOTER -->
 
-<footer class="footer ">
+<footer class="footer " id="contact">
          <div class="container">
          <p class="footer-contacts">
                     
@@ -347,63 +347,28 @@ Telefons: +371 2778811</p>
         </section>
 
     </div>
-    <script>
-        var link = document.querySelector(".login-link");
-        var popup = document.querySelector(".overlay");
- 
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+ $('.scrollto').on( 'click', function(){ 
+    var el = $(this);
+    var dest = el.attr('href'); // получаем направление
+    if(dest !== undefined && dest !== '') { // проверяем существование
+        $('html').animate({ 
+            scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+        }, 1000 // скорость прокрутки
+        );
+    }
+    return false;
+});
+</script>
+ <script src="script.js"></script>
+</body>
 
-        var close = document.querySelector(".modal-close"); 
-        var login = popup.querySelector("[name=login]");
-        var form = popup.querySelector("form");
-        var password = popup.querySelector("[name=password]");
-    
+</html>
 
-        link.addEventListener("click", function(evt) {
-            evt.preventDefault();
-
-            popup.classList.add("modal-show");
-            login.focus();
-        });
-
-        close.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-        });
-        
-        
-        
-    var map = document.querySelector(".map-popup");
-       var popupMap = document.querySelector(".overlay-map");
-var mapClose = document.querySelector(".map-close");
-        
-        map.addEventListener("click", function(evt) {
-            evt.preventDefault();
-
-            popupMap.classList.add("modal-show");
-        });
-         mapClose.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popupMap.classList.remove("modal-show");
-           
-        });  
-        
-        
-    var map = document.querySelector(".contact-map");
-       var popupMap = document.querySelector(".overlay-map");
-var mapClose = document.querySelector(".map-close");
-        
-        map.addEventListener("click", function(evt) {
-            evt.preventDefault();
-
-            popupMap.classList.add("modal-show");
-        });
-         mapClose.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popupMap.classList.remove("modal-show");
-           
-        });
-
-    </script>
 </body>
 
 </html>
