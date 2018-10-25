@@ -2,6 +2,11 @@
 @font-face 
     font-family: 'PT Sans', sans-serif
 
+@keyframes bounce
+    0% { transform: translateY(-2000px)} 
+    70% { transform: translateY(30px)} 
+    90% { transform: translateY(-10px)} 
+    100% { transform: translateY(0)}
 
 *, *::after, *::before
     box-sizing: inherit
@@ -887,6 +892,8 @@ footer .container
     
 .modal-show
     display: block
+    animation-name: bounce
+    animation-duration: 0.6
     
 .modal-login
  
