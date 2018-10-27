@@ -266,17 +266,17 @@
         </section>
 
     </div>
-    
+
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script>
- $('.scrollto').on( 'click', function(){ 
+ $('.scrollto').on( 'click', function(){
     var el = $(this);
     var dest = el.attr('href'); // получаем направление
     if(dest !== undefined && dest !== '') { // проверяем существование
-        $('html').animate({ 
+        $('html').animate({
             scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
         }, 1000 // скорость прокрутки
         );

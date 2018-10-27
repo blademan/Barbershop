@@ -1,11 +1,11 @@
 
-@font-face 
+@font-face
     font-family: 'PT Sans', sans-serif
 
 @keyframes bounce
-    0% { transform: translateY(-2000px)} 
-    70% { transform: translateY(30px)} 
-    90% { transform: translateY(-10px)} 
+    0% { transform: translateY(-2000px)}
+    70% { transform: translateY(30px)}
+    90% { transform: translateY(-10px)}
     100% { transform: translateY(0)}
 
 *, *::after, *::before
@@ -13,6 +13,7 @@
 img
     width: 100%
     height: auto
+    padding: 0
 
 html
     box-sizing: border-box
@@ -22,7 +23,7 @@ html
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden 
+input[type="radio"].visually-hidden
     position: absolute
     width: 1px
     height: 1px
@@ -30,30 +31,30 @@ input[type="radio"].visually-hidden
     border: 0
     padding: 0
     clip: rect(0 0 0 0 )
-    overflow: hidden 
+    overflow: hidden
     white-space: nowrap
-    
-    
-    
 
-  
 
-  
- 
-  
+
+
+
+
+
+
+
 
 
 body
     margin: 0
     padding: 0
-    
+
     font-family: 'PT Sans', sans-serif
     font-size: 14px
     line-height: 24px
     font-weight: 700
     color: #ffffff
     text-transform: uppercase
-    
+
     background-color: #000000
     background-image: url(../img/bg.png)
     background-position: top center
@@ -74,7 +75,7 @@ body
 
 .inner-page
     color: #000000
-    
+
     background-color: #fbf8f5
     background-image: url(../img/Layer1.jpg)
     background-position: 0 0
@@ -88,12 +89,12 @@ body
 
 
 .inner-page .header-logo
-    
+
     order: 0
     width: 111px
     height: 24px
     padding: 23px 20px
-   
+
 
 
 .inner-page .main-navigation
@@ -108,12 +109,12 @@ body
     padding: 10px 30px
     font: inherit
     margin-right: 15px
-    
+
     text-align: center
     color: #ffffff
     vertical-align: middle
     text-transform: uppercase
-    
+
     background-color: #000000
     border: none
 .button:hover,
@@ -123,13 +124,13 @@ body
 
 .button:disabled
     background-color: grey
-    
+
 
 a
     text-decoration: none
 
 .main-header
-  
+
     margin-bottom: 60px
     color: white
 
@@ -145,25 +146,25 @@ a
     margin: 0
     padding: 0
     display: flex
-    
+
     flex-direction: column
 
     align-items: center
     font-size: 16px
     line-height: 20px
     color: #ffffff
-    
+
     border-color: #000
 
 .navigation-wrap
     width: 100%
     margin-bottom: 60px
-    
+
     background-color: #000000
 
 
 .navigation-wrap .container
-    
+
     display: flex
     justify-content: space-between
 .site-navigation,
@@ -177,19 +178,19 @@ a
     display: flex
     flex-wrap: wrap
 
-      
+
 
 .user-navigation
     display: flex
     width: 140px
     position: relative
-    
+
 .user-navigation .login-link
     padding-left: 50px
-    
+
 .login-link::before
     content: ''
-       
+
     position: absolute
     width: 16px
     height: 18px
@@ -203,9 +204,9 @@ a
 .login-link:focus::before,
 .login-link:focus::before
     opacity: 1
-    
 
- 
+
+
 
 .site-navigation a,
 .user-navigation a
@@ -224,18 +225,18 @@ a
 .site-navigation-active::after
     content: ""
     position: absolute
-    
+
     right: 20px
     bottom: 0
     left: 20px
-    
+
     height: 5px
     background-color: #ffffff
 .features
     margin-bottom: 80px
 
 .features-items
-    
+
     display: flex
     -webkit-box-pack: justify
     -ms-flex-pack: justify
@@ -243,7 +244,7 @@ a
     margin: 0
     padding: 0
     list-style: none
-    
+
 
 .features-item
     width: 300px
@@ -257,7 +258,7 @@ a
 
 .features-item h3:after
     content: ''
-    
+
     position: absolute
     left: 50%
     top: 50px
@@ -266,7 +267,7 @@ a
     margin-left: -10px
     transform: rotate(45deg)
     background-color: white
-    
+
 .index-columns
     display: -webkit-box
     display: -ms-flexbox
@@ -276,7 +277,7 @@ a
     justify-content: space-between
     padding: 50px 80px
     color: #000000
-    
+
     background-color: #f8f5f2
     background-image: url(../img/Layer1.jpg)
     background-position: 0 0
@@ -287,12 +288,12 @@ a
 .index-columns h2
     font-size: 30px
     line-height: 42px
-    
+
 .news
     width: 380px
-    
 
-       
+
+
 
 .gallery
     width: 300px
@@ -302,9 +303,9 @@ a
     margin: 0
     padding: 0
     margin-bottom: 25px
-   
 
-    
+
+
 .news-items
     & time
         text-transform: none
@@ -317,20 +318,20 @@ a
     width: 140px
     margin: 0
     bottom: 0
-    
+
 .gallery-button-next
     right: 0
 .gallery-button-back
-    left: 0   
-    
+    left: 0
+
 .gallery-items
     height: 164px
     padding: 0
-    margin: 0   
+    margin: 0
     background-color: #cccccc
     border: 7px solid #ffffff
     & img
-        width: 286px 
+        width: 286px
         height: 164px
 
 .contacts
@@ -351,12 +352,12 @@ a
 .appointment-item
     width: 140px
     margin: 0
-   
+
     & label
         display: block
         margin-left: 15px
         margin-bottom: 7px
-    
+
 .appointment-item input
     box-sizing: border-box
     font: inherit
@@ -384,8 +385,8 @@ a
     list-style: none
 .breadcrumbs-point
     position: relative
- 
-    
+
+
 
 
 .breadcrumbs a
@@ -397,8 +398,8 @@ a
     position: relative
 .breadcrumbs a:after
     content: ""
-    
-    
+
+
     position: absolute
     top: 9px
     right: -25px
@@ -420,7 +421,7 @@ a
 
     margin: 0
     width: 250px
-     
+
     cursor: pointer
     & li
         margin-top: 10px
@@ -431,7 +432,7 @@ a
     margin-bottom: 20px
 .filter-option-wrap
     margin-top: 30px
-.checkbox-indicator 
+.checkbox-indicator
     position: absolute
     top: 2px
     left: -25px
@@ -444,7 +445,7 @@ a
     border-color: #663d15
     outline: thin dotted
     outline: 5px auto
-    
+
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after
   content: ""
@@ -462,10 +463,10 @@ a
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after
     transform: rotate(-45deg)
 .filter-checkbox:focus,
-.filter-checkbox:hover 
+.filter-checkbox:hover
     color: #663d15
-    
-    
+
+
 /*radio*/
 
 
@@ -474,7 +475,7 @@ a
 
 .filter-radio:before
     content: ""
-    
+
     position: absolute
     left: -25px
     width: 15px
@@ -484,7 +485,7 @@ a
 
 .filter-input:checked + .filter-radio::after
     content: ""
-    
+
     position: absolute
     left: -23px
     top: 1px
@@ -492,16 +493,16 @@ a
     height: 12px
     background-color: black
     border-radius: 50%
-    
-.filter-radio + .filter-input:disabled 
+
+.filter-radio + .filter-input:disabled
   color: #aba9a7
 
-  cursor: default    
+  cursor: default
 .filter fieldset
     border: none
     margin: 0
     padding: 0
-    
+
 
 .filter legend
     font-size: 24px
@@ -522,7 +523,7 @@ a
 
 .filter-input:disabled + label
     color: #000000
-    
+
     opacity: 0.5
 .filter legend
     margin-bottom: 40px
@@ -538,11 +539,11 @@ a
     padding: 0
     margin: 0
     list-style: none
-       
+
     display: flex
-    
+
     flex-wrap: wrap
-   
+
     justify-content: space-between
 
 .catalog-item
@@ -554,24 +555,24 @@ a
     padding: 10px
     width: 220px
     margin-bottom: 20px
-   
+
     background-color: #f8f8f8
     box-shadow: 0 0 7px 2px #ccc
-   
+
     span
         color: #000000
-        
+
     & .button
         padding: 11px 25px 10px 25px
         margin: 0
         margin-left: -2px
-        
-    
+
+
 .catalog-item:hover
     -webkit-box-shadow: 00 10px rgba(0, 0, 0, 0.1)
     box-shadow: 00 10px rgba(0, 0, 0, 0.1)
 .catalog-link
-    display: flex 
+    display: flex
     flex-wrap: wrap
 .catalog-title
     margin: 0
@@ -592,7 +593,7 @@ a
     margin: 0
     background-color: #e5e5e5
 
-.pagination-list 
+.pagination-list
     margin: 0
     padding: 0
     list-style: none
@@ -610,7 +611,7 @@ a
 .pagination-item a:focus,
 .pagination-item a:active
     background-color: #663d15
-    
+
 
 .pagination-item-active a
     color: black
@@ -620,7 +621,7 @@ a
 .pagination-item-active a:focus,
 .pagination-item-active a:active
     color: #000000
-    
+
     background-color: white
 .product-photos
     width: 480px
@@ -628,7 +629,7 @@ a
     flex-wrap: wrap
 .product-photo-full
     width: 450px
-  
+
     margin: 0
     padding: 0
 
@@ -665,12 +666,12 @@ a
     width: 500px
     margin-left: 50px
     margin-right: 50px
-    
+
 .product-list li
     position: relative
 .product-list li:before
     content: ""
-    
+
     position: absolute
     top: 7px
     left: -35px
@@ -678,33 +679,33 @@ a
     height: 10px
     background-color: black
     transform: rotate(45deg)
-    
+
 .product-info ul
     list-style: none
 .product-text
     margin-bottom: 30px
-    
-    
+
+
 .price-title
     font-size: 48px
     text-align: center
     display: flex
     align-items: center
-  
-    
+
+
 .price-title:before,
 .price-title:after
     content: ""
-    
+
     flex-grow: 1
     flex-shrink: 0
     width: 60px
     height: 4px
     background-color: black
-    
+
 .price-title:before
     margin-right: 20px
-    
+
 .price-title:after
     margin-left: 20px
 .price-li
@@ -717,10 +718,10 @@ a
     margin-top: 13px
     position: relative
     padding-left: 20px
-    
+
 .price-li li::before
     content: ""
-    
+
     position: absolute
     top: 8px
     left: 0
@@ -750,7 +751,7 @@ a
         width: 50%
     &-right
         width: 50%
-        
+
     & h3,
         font-size: 24px
         font-weight: 700
@@ -779,17 +780,17 @@ footer .container
     display: -ms-flexbox
 
     display: flex
-  
+
 
 .footer-contacts
     width: 320px
     margin: 0 80px 0 0
 
-.footer-contacts a 
-    
+.footer-contacts a
+
     color: #ffffff
     text-decoration: underline
-    
+
 
 .footer-contacts a:hover,
 .footer-contacts a:focus
@@ -797,13 +798,13 @@ footer .container
 
 
 .footer-social
-  
+
     width: 150px
     text-align: center
     & b
         margin-bottom: 25px
         display: block
- 
+
 
 
 
@@ -819,27 +820,27 @@ footer .container
 
 
 
-.social-button 
+.social-button
     display: flex
     width: 43px
     height: 43px
-  
+
     align-items: center
     justify-content: center
 
     color: #ffffff
     background-color: black
-    
+
 .social-button:hover,
 .social-button:focus
     background-color: #ffffff
-    
+
 .social-button:hover path,
 .social-button:focus path
     fill: #000000
-    
+
 .footer-copyright
-   
+
     width: 150px
     margin: 0
     margin-left: auto
@@ -848,7 +849,7 @@ footer .container
          display: block
          margin-right: 0px
          margin-top: 25px
-        
+
 .footer-copyright .button:hover,
 .footer-copyright .button:focus
     color: #000000
@@ -860,23 +861,23 @@ footer .container
 .modal
     position: fixed
     color: #000000
-  
+
     background-image: url(../img/Modalbg.jpg)
     background-position: 0 0
     background-repeat: repeat
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)
     z-index: 5
         margin: 0
-.overlay 
+.overlay
     position: fixed
     display: none
     width: 100%
     height: 100%
     top: 0
     left: 0
-   
+
     background-color: rgba(0,0,0,0.6)
-   
+
     z-index: 3
 .overlay-map
     position: fixed
@@ -885,18 +886,18 @@ footer .container
     height: 100%
     top: 0
     left: 0
-   
+
     background-color: rgba(0,0,0,0.6)
-   
+
     z-index: 3
-    
+
 .modal-show
     display: block
     animation-name: bounce
     animation-duration: 0.9s
-    
+
 .modal-login
- 
+
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
@@ -909,43 +910,43 @@ footer .container
     position: absolute
     top: 0
     right: -34px
-    
+
     width: 20px
     height: 20px
-    
+
     font-size: 0
     cursor: pointer
-    
+
     background-color: transparent
     border: 0
     outline: none
-    
+
 .modal-close::before,
 .modal-close::after,
 .map-close::before,
 .map-close::after
     content: ""
-    
+
     position: absolute
     top: -11px
     left: -11px
-    
+
     width: 19px
     height: 3px
-    
+
     background-color: #d0d0d0
-.map-close::before,   
+.map-close::before,
 .modal-close::before
     transform: rotate(45deg)
-.map-close::after,  
+.map-close::after,
 .modal-close::after
     transform: rotate(-45deg)
-    
+
 .modal-description
     font-size: 13px
     margin: 0
     margin-bottom: 20px
-.modal h2 
+.modal h2
     margin: 0
     margin-bottom: 20px
     font-size: 24px
@@ -966,12 +967,12 @@ footer .container
     border: 2px solid black
     background-color: #f9f6f3
     padding: 10px 30px 10px 10px
-    
+
 
 
 .login-form input:focus
     border-color: #663d15
-    
+
 
 
 .login-checkbox:hover,
@@ -986,13 +987,13 @@ footer .container
     background-image: url("../img/lock.png")
     background-repeat: no-repeat
     background-position: 270px center
-    
+
 .login-checkbox
     position: relative
     padding-left: 30px
-    
+
     cursor: pointer
-    
+
 .login-checkbox input[type="checkbox"] + .checkbox-indicator
     position: absolute
     top: 0
@@ -1004,11 +1005,11 @@ footer .container
     border-color: #663d15
     outline: thin dotted
     outline: 5px auto
-    
+
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after
     content: ""
-    
+
     position: absolute
     top: 5px
     left: 0px
@@ -1025,14 +1026,14 @@ footer .container
 .restore:hover,
 .restore:focus
     text-decoration: none
-    
+
 .login-form .button
     width: 100%
-    
+
 .modal-map
     top: 50%
     left: 50%
-    
+
     width: 767px
     height: 585px
     transform: translate(-50%, -50%)
@@ -1040,6 +1041,5 @@ footer .container
     & p
 
 
-    
 
-    
+
